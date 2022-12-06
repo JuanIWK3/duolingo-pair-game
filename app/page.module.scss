@@ -1,0 +1,56 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  gap: 16px;
+
+  .game {
+    display: flex;
+    width: 100%;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 8px;
+  }
+
+  .left {
+    align-items: flex-end;
+  }
+
+  .right {
+    align-items: flex-start;
+  }
+
+  .pair {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 200px;
+    padding: 0.5rem 0;
+
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
+    user-select: none;
+
+    &:hover {
+      background: #eee;
+      cursor: pointer;
+    }
+
+    &.selected {
+      background: rgb(93, 150, 255);
+    }
+  }
+}
